@@ -1,3 +1,4 @@
+
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -35,7 +36,7 @@ async def start(_, message: Message):
 
 @Client.on_message(filters.command("hexor") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**𝗦𝗺𝗼𝗸𝗲𝗿 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁 𝗢𝗻𝗹𝗶𝗻𝗲 𝗡𝗼𝘄\n🌠𝗛𝗲𝘅𝗼𝗿 𝗫𝗗 <3**""",
+      await message.reply_text("""**𝗕𝗼𝘁 𝗜𝘀 𝗢𝗻𝗹𝗶𝗻𝗲\n🌠𝗛𝗲𝘅𝗼𝗿 𝗫𝗗 <3**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
